@@ -1,0 +1,53 @@
+.road-map {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.road-map-cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: default;
+}
+
+.banker-cell {
+    background-color: #dc3545;
+    color: white;
+}
+
+.player-cell {
+    background-color: #007bff;
+    color: white;
+}
+
+.tie-cell {
+    background-color: #28a745;
+    color: white;
+}
+
+.empty-cell {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .road-map {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    
+    .road-map-cell {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+}

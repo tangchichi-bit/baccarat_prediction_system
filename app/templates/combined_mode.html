@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/road_map.css') }}">
+{% endblock %}
+
+{% block flash_messages %}
+<!-- 這裡不顯示 flash 消息，我們會在牌值輸入框下方顯示 -->
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <h2>綜合預測模式</h2>
+        <p>結合AI深度學習與赫茲公式的百家樂預測系統</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>路單記錄</h5>
+            </div>
+            <div class="card-body">
+                <div id="road-map" class="road-map"></div>
+                <div class="mt-3">
+                    <button id="btn-banker" class="btn btn-danger me-2">莊家</button>
+                    <button id="btn-player" class="btn btn-primary me-2">閒家</button>
+                    <button id="btn-tie" class="btn btn-success me-2">和局</button>
+                    <button id="btn-clear-history" class="btn btn-warning me-2">清除歷史</button>
+                    <button id="btn-new-shoe" class="btn btn-secondary">更換牌靴</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>牌值輸入</h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">閒家牌值</label>
+                        <div class="input-group">
+                            <select id="player-card-1" class="form-select">
+                                <option value="">選擇牌值</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                            <select id="player-card-2" class="form-select">
+                                <option value="">選擇牌值</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                            <select id="player-card-3" class="form-select">
+                                <option value="">第三張牌(選填)</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">莊家牌值</label>
+                        <div class="input-group">
+                            <select id="banker-card-1" class="form-select">
+                                <option value="">選擇牌值</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                            <select id="banker-card-2" class="form-select">
+                                <option value="">選擇牌值</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                            <select id="banker-card-3" class="form-select">
+                                <option value="">第三張牌(選填)</option>
+                                <option value="1">A</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">J</option>
+                                <option value="12">Q</option>
+                                <option value="13">K</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 在這裡顯示 flash 消息 -->
+                <div class="flash-messages mb-3">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                
+                <button id="btn-train-model" class="btn btn-warning me-2">訓練模型</button>
+                <button id="btn-predict" class="btn btn-primary">預測下一局</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>綜合預測結果</h5>
+            </div>
+            <div class="card-body">
+                <div id="prediction-result" class="text-center">
+                    <p>請先訓練模型並輸入牌值進行預測</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>預測詳情</h5>
+            </div>
+            <div class="card-body">
+                <div id="prediction-details">
+                    <p>AI預測: <span id="ai-prediction">-</span></p>
+                    <p>AI置信度: <span id="ai-confidence">-</span></p>
+                    <p>公式預測: <span id="formula-prediction">-</span></p>
+                    <p>公式分數: <span id="formula-score">-</span></p>
+                    <p>預測理由: <span id="prediction-reason">-</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>模型信息</h5>
+            </div>
+            <div class="card-body">
+                <p>模型準確率: <span id="model-accuracy">尚未訓練</span></p>
+                <p>訓練狀態: <span id="training-status">未訓練</span></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h5>牌靴信息</h5>
+            </div>
+            <div class="card-body">
+                <p>當前牌靴: <span id="current-shoe-id">1</span></p>
+                <p>當前局數: <span id="current-round">0</span> / <span id="max-rounds">80</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/road_map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/combined_mode.js') }}"></script>
+{% endblock %}

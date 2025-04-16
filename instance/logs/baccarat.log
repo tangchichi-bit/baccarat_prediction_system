@@ -1,0 +1,81 @@
+2025-04-14 14:13:57,131 INFO: 百家樂預測系統啟動 [in C:\Users\c2461\baccarat_prediction_system\app\__init__.py:23]
+2025-04-14 14:15:05,145 INFO: 百家樂預測系統啟動 [in C:\Users\c2461\baccarat_prediction_system\app\__init__.py:23]
+2025-04-14 14:15:13,675 INFO: 百家樂預測系統啟動 [in C:\Users\c2461\baccarat_prediction_system\app\__init__.py:23]
+2025-04-14 14:16:53,603 INFO: 已創建新模型 [in C:\Users\c2461\baccarat_prediction_system\app\models\ai_model.py:42]
+2025-04-14 14:16:53,604 WARNING: 沒有歷史數據可用於訓練 [in C:\Users\c2461\baccarat_prediction_system\app\models\ai_model.py:110]
+2025-04-14 14:23:27,981 INFO: 百家樂預測系統啟動 [in C:\Users\c2461\baccarat_prediction_system\app\__init__.py:23]
+2025-04-14 14:33:53,247 INFO: 百家樂預測系統啟動 [in C:\Users\c2461\baccarat_prediction_system\app\__init__.py:23]
+2025-04-16 10:03:50,602 - app - INFO - 初始化 AI 模型
+2025-04-16 10:03:50,610 - root - INFO - 已啟動準確率監控線程
+2025-04-16 10:03:50,623 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:03:56,955 - app - INFO - 初始化 AI 模型
+2025-04-16 10:03:56,956 - root - INFO - 已啟動準確率監控線程
+2025-04-16 10:03:56,963 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 10:03:56,969 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 10:03:57,770 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 10:03:57,770 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 10:55:18,460 - app - INFO - 初始化 AI 模型
+2025-04-16 10:55:18,460 - root - INFO - 已啟動準確率監控線程
+2025-04-16 10:55:18,475 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:55:24,264 - app - INFO - 初始化 AI 模型
+2025-04-16 10:55:24,266 - root - INFO - 已啟動準確率監控線程
+2025-04-16 10:55:24,273 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 10:55:24,278 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 10:55:25,062 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 10:55:25,062 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 10:56:32,455 - app - INFO - 應用初始化完成
+2025-04-16 10:56:32,468 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:56:38,166 - app - INFO - 應用初始化完成
+2025-04-16 10:56:38,173 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 10:56:38,177 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 10:56:38,965 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 10:56:38,966 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 10:57:14,180 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\models\\ai_model.py', reloading
+2025-04-16 10:57:14,662 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:57:20,562 - app - INFO - 應用初始化完成
+2025-04-16 10:57:20,568 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 10:57:20,574 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 10:57:21,378 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 10:57:21,378 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 10:58:03,965 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\models\\ai_model.py', reloading
+2025-04-16 10:58:04,427 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:58:12,866 - app - INFO - 應用初始化完成
+2025-04-16 10:58:12,880 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 10:58:18,717 - app - INFO - 應用初始化完成
+2025-04-16 10:58:18,726 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 10:58:18,732 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 10:58:19,555 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 10:58:19,555 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 11:01:29,654 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\routes\\api.py', reloading
+2025-04-16 11:01:30,161 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 11:01:40,686 - app - INFO - 應用初始化完成
+2025-04-16 11:01:40,698 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 11:01:46,227 - app - INFO - 應用初始化完成
+2025-04-16 11:01:46,234 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 11:01:46,238 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 11:01:46,958 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 11:01:46,958 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 11:03:29,172 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\models\\ai_model.py', reloading
+2025-04-16 11:03:29,656 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 11:03:36,295 - app - INFO - 應用初始化完成
+2025-04-16 11:03:36,303 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 11:03:36,309 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 11:03:37,132 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 11:03:37,132 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 11:04:01,552 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\routes\\api.py', reloading
+2025-04-16 11:04:02,074 - werkzeug - INFO -  * Restarting with stat
+2025-04-16 11:04:08,670 - app - INFO - 應用初始化完成
+2025-04-16 11:04:08,677 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 11:04:08,682 - werkzeug - INFO -  * Debugger PIN: 250-663-016
+2025-04-16 11:04:09,469 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-16 11:04:09,469 - werkzeug - INFO -  * Running on http://192.168.1.234:5000/ (Press CTRL+C to quit)
+2025-04-16 11:04:19,134 - werkzeug - INFO -  * Detected change in 'C:\\Users\\c2461\\baccarat_prediction_system\\app\\__init__.py', reloading
+2025-04-16 11:04:19,589 - werkzeug - INFO -  * Restarting with stat
